@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do Decentralized Application</title>
+    <script src="main.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.1.umd.min.js"
+        type="application/javascript"></script>
+		<link rel="stylesheet" href="/Css/main.css">
+	<title>Voting DAPP</title>
+
+</head>
+<body>
+	
+	
+    <div class = "navbar">
+        <a href="/index.html">Vote</a>
+        <a href="/ListVoters.html">List Voters</a>
+    </div>
+
+    <div class="container"><h1 style="color: rgb(61, 245, 70); font-size: 24px;" >Welcome to the Yash's Decentralized Voting Application</h1></div>
+
+    <div>
+        <button onclick="connectMetamask()"> Please Connect Metamask</button>
+        <p id="metamasknotification"></p>
+    </div>
+	
+
+    <div class="container">
+        <span>Vote Here!</span>
+        <input type = "number" id ="vote" placeholder="Add Index of the Voter ... ">
+        <button onclick="addVote()">Add Vote</button>
+        <p id="cand"></p>
+        
+        <button onclick="voteStatus()" style="color: #f2f2f2;">Check Voting Status</button>
+        <p id = "status"></p>
+        <p id = "time"></p>
+    </div>
+</body>
+</html>
